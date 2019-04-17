@@ -5,15 +5,19 @@
     <title></title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <!--link(rel="stylesheet" href="css/grid-offsets.css")-->
+    <link rel="stylesheet" href="css/my-responsive-grid.css">
     <link rel="stylesheet" href="css/gradient.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"><!--[if lte IE 8]>
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+<!--<![endif]-->
     <header class="bvzd_mint fullwidth">
       <div class="pure-g header-section wrapper ecken-top-right ecken-top-left">
-        <div class="pure-u-2-6 logo"><img src="bilder/LogoBVZD.svg" alt="Belgische Vereniging van Ziekehuisdirecteurs vzw"></div>
-        <div class="pure-u-4-6">
-          <ul class="language">
+        <div class="logo pure-u-1 pure-u-md-3-6 pure-u-lg-2-6"><img src="bilder/LogoBVZD.svg" alt="Belgische Vereniging van Ziekehuisdirecteurs vzw"></div>
+        <div class="language pure-u-1 pure-u-md-3-6 pure-u-lg-4-6">
+          <ul>
             <li><a class="bvzd_lila" href="?lang=">nl</a></li>
             <li><a class="bvzd_blau50" href="?lang=">fr</a></li>
             <li><a class="bvzd_mint50" href="?lang=">en</a></li>
@@ -21,7 +25,7 @@
         </div>
       </div>
       <div class="pure-g wrapper">
-        <div class="pure-u-5-6">
+        <div class="pure-u-1 pure-u-sm-4-6 pure-u-md-5-6">
           <div class="pure-menu pure-menu-horizontal">
             <ul class="pure-menu-list meta-menu">
               <li class="pure-menu-item"><a class="pure-menu-link" href="">BVZD</a></li>
@@ -32,7 +36,7 @@
             </ul>
           </div>
         </div>
-        <div class="pure-u-1-6"> 
+        <div class="pure-u-1 pure-u-sm-2-6 pure-u-lg-1-6">
           <form class="pure-form search">
             <input type="search" placeholder="Suche">
             <button class="d-none" type="submit">Suche</button>
@@ -40,28 +44,30 @@
         </div>
       </div>
       <div class="pure-g banner-section wrapper">
-        <div class="pure-u-1-6 pure-menu ecken-bottom-left">
+        <div class="pure-u-1 pure-u-sm-6-6 pure-u-lg-1-6 pure-menu ecken-bottom-left">
           <div class="lindverlauf nav-main-cnt">
             <ul class="pure-menu-list main-menu">
-              <li class="pure-menu-item"><a class="pure-menu-link home" href="">Home</a></li>
-              <li class="pure-menu-item"><a class="pure-menu-link about" href="">About us</a></li>
-              <li class="pure-menu-item"><a class="pure-menu-link relations" href="">Relations</a></li>
-              <li class="pure-menu-item footer-links"><a class="pure-menu-link ledensectie" href="">Ledensectie</a></li>
-              <li class="pure-menu-item"><a class="pure-menu-link gallery" href="">Gallery</a></li>
-              <li class="pure-menu-item header-links"><a class="pure-menu-link bestuur" href="">Bestuur</a></li>
+              <li class="pure-menu-item"><a class="pure-menu-link icon-link Home" href="">Home</a></li>
+              <li class="pure-menu-item"><a class="pure-menu-link icon-link About" href="">About us</a></li>
+              <li class="pure-menu-item"><a class="pure-menu-link icon-link Relations" href="">Relations</a></li>
+              <li class="pure-menu-item"><a class="pure-menu-link icon-link Gallery" href="">Gallery</a></li>
+              <li class="pure-menu-item footer-links"><a class="pure-menu-link icon-link Ledensectie" href="">Ledensectie</a></li>
+              <li class="pure-menu-item header-links"><a class="pure-menu-link icon-link Bestuur" href="">Bestuur</a></li>
             </ul>
           </div>
         </div>
-        <div class="pure-u-5-6 banner-carousel">
+        <div class="pure-u-1 pure-u-sm-6-6 pure-u-lg-5-6 banner-carousel">
           <div class="flexslider carousel">
             <div class="slides">
               <li>
                 <div class="slide-cnt">
                   <div class="elastic"><img src="content-img/motiv1.png"/></div>
                   <div class="caption">
-                    <div class="text">
+                    <div class="caption-cnt">
                       <h2>Tem et ent aut as por aliquos sed eos es et ped quam sumentia soluptat.</h2>
-                      <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. Nequiaerum dolore officaborro offici cumquuntur alibers perfera quos ea cus. Soluptae nihic temquae.</p><a class="button2" href="#">Meer informatie</a>
+                      <div class="text">
+                        <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. </p>
+                      </div><a class="button2" href="#">Meer informatie</a>
                     </div>
                   </div>
                 </div>
@@ -70,9 +76,11 @@
                 <div class="slide-cnt">
                   <div class="elastic"><img src="content-img/motiv1.png"/></div>
                   <div class="caption">
-                    <div class="text">
+                    <div class="caption-cnt">
                       <h2>Tem et ent aut as por aliquos sed eos es et ped quam sumentia soluptat.</h2>
-                      <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. Nequiaerum dolore officaborro offici cumquuntur alibers perfera quos ea cus. Soluptae nihic temquae.</p><a class="button2" href="#">Meer informatie</a>
+                      <div class="text">
+                        <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. </p>
+                      </div><a class="button2" href="#">Meer informatie</a>
                     </div>
                   </div>
                 </div>
@@ -81,9 +89,11 @@
                 <div class="slide-cnt">
                   <div class="elastic"><img src="content-img/motiv1.png"/></div>
                   <div class="caption">
-                    <div class="text">
+                    <div class="caption-cnt">
                       <h2>Tem et ent aut as por aliquos sed eos es et ped quam sumentia soluptat.</h2>
-                      <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. Nequiaerum dolore officaborro offici cumquuntur alibers perfera quos ea cus. Soluptae nihic temquae.</p><a class="button2" href="#">Meer informatie</a>
+                      <div class="text">
+                        <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. </p>
+                      </div><a class="button2" href="#">Meer informatie</a>
                     </div>
                   </div>
                 </div>
@@ -92,9 +102,11 @@
                 <div class="slide-cnt">
                   <div class="elastic"><img src="content-img/motiv1.png"/></div>
                   <div class="caption">
-                    <div class="text">
+                    <div class="caption-cnt">
                       <h2>Tem et ent aut as por aliquos sed eos es et ped quam sumentia soluptat.</h2>
-                      <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. Nequiaerum dolore officaborro offici cumquuntur alibers perfera quos ea cus. Soluptae nihic temquae.</p><a class="button2" href="#">Meer informatie</a>
+                      <div class="text">
+                        <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. </p>
+                      </div><a class="button2" href="#">Meer informatie</a>
                     </div>
                   </div>
                 </div>
@@ -103,9 +115,11 @@
                 <div class="slide-cnt">
                   <div class="elastic"><img src="content-img/motiv1.png"/></div>
                   <div class="caption">
-                    <div class="text">
+                    <div class="caption-cnt">
                       <h2>Tem et ent aut as por aliquos sed eos es et ped quam sumentia soluptat.</h2>
-                      <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. Nequiaerum dolore officaborro offici cumquuntur alibers perfera quos ea cus. Soluptae nihic temquae.</p><a class="button2" href="#">Meer informatie</a>
+                      <div class="text">
+                        <p>Idignat eium sit, is rest faccab ipsus si ipiet perit, ut od excere sit odit molo maio. </p>
+                      </div><a class="button2" href="#">Meer informatie</a>
                     </div>
                   </div>
                 </div>
@@ -116,7 +130,7 @@
       </div>
     </header>
     <main class="pure-g main-section wrapper">
-      <div class="pure-u-4-6 content">
+      <div class="content pure-u-lg-4-6">
         <div class="pure-g">
           <div class="pure-u-3-6">
             <div class="block"><img src="content-img/crisis.png"></div>
@@ -140,40 +154,44 @@
           </div>
         </div>
       </div>
-      <div class="pure-u-2-6 sidebar">
+      <div class="sidebar pure-u-1 pure-u-lg-2-6">
         <div class="pure-g">
           <div class="pure-u-3-6 lilaverlauf box-social"><a href="https://twitter.com/" target="_blank"><img src="bilder/linkedin.svg"></a></div>
           <div class="pure-u-3-6 blauverlauf box-social"><a href="https://www.linkedin.com" target="_blank"><img src="bilder/twitter.svg"></a></div>
-          <div class="pure-u-6-6"> 
-            <div class="lindverlauf box-list">
-              <h3>Onze Publicaties</h3>
+          <div class="pure-u-md-2-6 pure-u-lg-6-6 lindverlauf">
+            <div class="box-list">
+              <h3 class="icon-link Publicaties">Onze Publicaties</h3>
               <ul>
                 <li><a>Position papers</a></li>
                 <li><a>Jaarverslagen</a></li>
               </ul>
             </div>
-            <div class="mintverlauf box-list">
-              <h3>Pers</h3>
+          </div>
+          <div class="pure-u-md-2-6 pure-u-lg-6-6 mintverlauf">
+            <div class="box-list">
+              <h3 class="icon-link Pers">Pers</h3>
               <ul>
                 <li><a>Over ons</a></li>
                 <li><a>Persberichten</a></li>
               </ul>
             </div>
-            <div class="mintverlauf box-list">
-              <h3><a>Jobaanbediedingen</a></h3>
+          </div>
+          <div class="pure-u-md-2-6 pure-u-lg-6-6 mintverlauf">
+            <div class="box-list">
+              <h3><a class="icon-link Jobs">Jobaanbediedingen</a></h3>
             </div>
           </div>
         </div>
         <div class="pure-g align-items-stretch">
-          <div class="pure-u-3-6">
-            <div class="lindverlauf box-contact">
+          <div class="pure-u-3-6 lindverlauf">
+            <div class="box-contact">
               <h4><a>Contact</a></h4>
               <address class="small"> <span>Louizalaan 65 box 11</span><span>1050 Brussel</span><span>Tel. 32 (0)50 232 598</span></address><a class="contact-bt small"> contacteer ons</a>
             </div>
           </div>
           <div class="pure-u-3-6 box-links">
-            <div class="box-useful mintverlauf"><a>Nuttige Links</a></div>
-            <div class="box-tweets blauverlauf"><a>Laatste Tweets</a></div>
+            <div class="box-useful mintverlauf"><a class="icon-link Links">Nuttige Links</a></div>
+            <div class="box-tweets blauverlauf"><a class="icon-link Tweets">Laatste Tweets</a></div>
           </div>
         </div>
       </div>
@@ -182,17 +200,32 @@
       <div class="pure-g pure-menu footer-section wrapper">
         <div class="pure-u-4-6">
           <ul class="pure-menu-list footer-menu">
-            <li class="pure-menu-item"><a class="pure-menu-link home" href="">Home</a></li>
-            <li class="pure-menu-item"><a class="pure-menu-link about" href="">About us</a></li>
-            <li class="pure-menu-item"><a class="pure-menu-link relations" href="">Relations</a></li>
-            <li class="pure-menu-item footer-links"><a class="pure-menu-link ledensectie" href="">Ledensectie</a></li>
-            <li class="pure-menu-item"><a class="pure-menu-link gallery" href="">Gallery</a></li>
-            <li class="pure-menu-item header-links"><a class="pure-menu-link bestuur" href="">Bestuur</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link icon-link Home" href="">Home</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link icon-link About" href="">About us</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link icon-link Relations" href="">Relations</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link icon-link Gallery" href="">Gallery</a></li>
+            <li class="pure-menu-item footer-links"><a class="pure-menu-link icon-link Ledensectie" href="">Ledensectie</a></li>
+            <li class="pure-menu-item header-links"><a class="pure-menu-link icon-link Bestuur" href="">Bestuur</a></li>
           </ul>
         </div>
       </div>
     </footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <div class="off-canvas lindverlauf pure-menu pure-menu-list">
+      <ul>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="">BVZD</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="">Activiteiten</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="">Partners</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="">Contact</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link" href="">EAHM2019</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link icon-link Home" href="">Home</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link icon-link About" href="">About us</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link icon-link Relations" href="">Relations</a></li>
+        <li class="pure-menu-item"><a class="pure-menu-link icon-link Gallery" href="">Gallery</a></li>
+        <li class="pure-menu-item footer-links"><a class="pure-menu-link icon-link Ledensectie" href="">Ledensectie</a></li>
+        <li class="pure-menu-item header-links"><a class="pure-menu-link icon-link Bestuur" href="">Bestuur</a></li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="js/flexslider/jquery.flexslider.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/flexslider/jquery.easing.js"></script>
