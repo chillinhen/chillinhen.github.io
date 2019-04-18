@@ -14,6 +14,11 @@
             });
             var carouselHeight = $('.nav-main-cnt').height();
             $('.flexslider.carousel').css('height',carouselHeight-16);
+            // and some positions
+            //shadow
+            var shadowPositionY = $('.header-section').height();
+            $('header .shadow').css('background-position-y', shadowPositionY);
+            console.log(shadowPositionY);
           }
       }
   // run test on initial page load (and put firstly in document)
